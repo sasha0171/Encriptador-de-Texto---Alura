@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encriptador de Texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!---- fontawesome ---->
+
+    <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!---- favicon ---->
+
+    <link
+      rel="shortcut icon"
+      href="./images/images/images.jpeg"
+      type="image/x-icon"
+    />
+
+    <!---- fonts ---->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---- estilos ---->
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/animista.css" />
+    <link rel="stylesheet" href="./css/style.css"
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+
+    <!---- secciones principales ---->
+
+    <main class="container">
+
+      <!---- Header ---->
+
+      <header class="header-btn">
+        <img src="images/images/Logo.png" class="logo-title" />
+        
+        
+      </header>
+
+      <!-- secciones de texto -->
+
+      <div class="section-container-main">
+        <div class="section-text-btn">
+            <span class="alert bounce-in-top slide-in-top">
+                ¡Genial!
+              </span>
+          <div class="text-write">
+            <textarea
+              id="inputText"
+              class="input-text"
+              type="text"
+              placeholder="Ingrese el texto aqui"
+              textarea
+            ></textarea>
+          </div>
+          <p class="text-limit">
+            Solo letras minusculas y sin caracteres especiales.
+          </p>
+
+          <!---- botones ---->
+
+          <div class="buttons">
+            <button class="btn" id="encript" type="submit">Encriptar</button>
+            <button
+              onclick="decryptText()"
+              class="btn"
+              id="decrypt"
+              type="submit"
+            >
+              Desencriptar
+            </button>
+            <button
+              onclick="copyToClipBoard()"
+              class="fa-solid fa-copy btn"
+              id="copy-text"
+              type="button"
+            ></button>
+          </div>
+        </div>
+
+        <!---- inputs ---->
+
+        <div class="input-btn-content">
+          <div class="text-box disabled">
+            <p id="text-result"></p>
+          </div>
+          <div class="alert-message-box">
+            <img src="images/images/muñeco.png" id="muñeco-img" class="muñeco" />
+            <p class="alert-message">Ningún mensaje fue encontrado</p>
+            <p class="alert-message2">
+              Ingresa el mensaje que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!---- footer ---->
+
+      <footer>
+        <div class="footer__content-copyright">
+          <p>
+            Desarrollado por Sasha Ambrueso
+            
+              
+            </a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./javascript/script.js"></script>
+    
+  </body>
+</html>
